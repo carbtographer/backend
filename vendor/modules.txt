@@ -1,0 +1,43 @@
+# github.com/PuerkitoBio/goquery v1.5.0
+github.com/PuerkitoBio/goquery
+# github.com/andybalholm/cascadia v1.0.0
+github.com/andybalholm/cascadia
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+github.com/dgrijalva/jwt-go
+# github.com/go-redis/redis v6.15.2+incompatible
+github.com/go-redis/redis
+github.com/go-redis/redis/internal
+github.com/go-redis/redis/internal/consistenthash
+github.com/go-redis/redis/internal/hashtag
+github.com/go-redis/redis/internal/pool
+github.com/go-redis/redis/internal/proto
+github.com/go-redis/redis/internal/util
+# github.com/golang-migrate/migrate/v4 v4.3.1
+github.com/golang-migrate/migrate/v4/source/file
+github.com/golang-migrate/migrate/v4
+github.com/golang-migrate/migrate/v4/database/postgres
+github.com/golang-migrate/migrate/v4/source
+github.com/golang-migrate/migrate/v4/database
+# github.com/gorilla/handlers v1.4.0
+github.com/gorilla/handlers
+# github.com/gorilla/mux v1.7.2
+github.com/gorilla/mux
+# github.com/hashicorp/errwrap v1.0.0
+github.com/hashicorp/errwrap
+# github.com/hashicorp/go-multierror v1.0.0
+github.com/hashicorp/go-multierror
+# github.com/jinzhu/gorm v1.9.8
+github.com/jinzhu/gorm/dialects/postgres
+# github.com/joho/godotenv v1.3.0
+github.com/joho/godotenv
+# github.com/lib/pq v1.1.1
+github.com/lib/pq
+github.com/lib/pq/hstore
+github.com/lib/pq/oid
+github.com/lib/pq/scram
+# golang.org/x/crypto v0.0.0-20190513172903-22d7a77e9e5f
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blowfish
+# golang.org/x/net v0.0.0-20190424112056-4829fb13d2c6
+golang.org/x/net/html
+golang.org/x/net/html/atom
