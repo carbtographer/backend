@@ -2,26 +2,24 @@ version: '3'
 services:
   postgres:
     image: postgres:alpine
-    restart: unless-stopped
     ports:
       - 5432:5432
-    environment:
-      POSTGRES_PASSWORD: postgres
-#   redis:
-#     image: redis:alpine
-#     restart: unless-stopped
-#     ports:
-#         - "6379:6379"
-  app:
+  redis:
+    image: redis:alpine
+    ports:
+        - "6379:6379"
+  api:
     build: .
+    restart: unless-stopped
     volumes:
       - ./:/usr/src/app
     ports:
         - "9001:9001"
-    # depends_on:
-    #     - postgres
-    #     - redis
+    depends_on:
+        - postgres
+        - redis
     environment:
         PORT: '9001'
     env_file: 
       - .env
+
