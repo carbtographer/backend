@@ -1,15 +1,27 @@
 version: '3'
 services:
-  carbtographer:
+  postgres:
+    image: postgres:alpine
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+#   redis:
+#     image: redis:alpine
+#     restart: unless-stopped
+#     ports:
+#         - "6379:6379"
+  app:
     build: .
     volumes:
-      - .:/app
-    working_dir: /app
-    env_file:
-      - .env
+      - ./:/usr/src/app
     ports:
-      - 9001:9001
-
-  nats:
-    image: nats-streaming:0.11.2
-    restart: on-failure
+        - "9001:9001"
+    # depends_on:
+    #     - postgres
+    #     - redis
+    environment:
+        PORT: '9001'
+    env_file: 
+      - .env
